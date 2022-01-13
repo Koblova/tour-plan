@@ -6,11 +6,13 @@
     justify-content: space-between
     padding-top: 40px
     padding-bottom: 40px
-  &-search
+    &__menu-button
+      display: none
+  &__search
     margin-right: auto
     margin-left: 108px
   &-bottom
-        background-color: $dark
+    background-color: $dark
   &-menu
     list-style-type: none
     margin: 0
@@ -27,15 +29,12 @@
       line-height: 18px
 .logo
   width: 177px
-  
-
 .search
   display: flex
   position: relative
   overflow: hidden
   border-radius: 6px
   height: 40px
-
   &__input
     width: 350px
     padding-left: 23px
@@ -58,7 +57,6 @@
   display: flex
   align-items: center
   text-decoration: none
-
   &__avatar
     width: 40px
     height: 40px
