@@ -390,6 +390,7 @@ template {
 
 .navbar-bottom {
   background-color: #0A223D;
+  font-weight: 700;
 }
 
 .navbar-menu {
@@ -518,8 +519,8 @@ template {
     width: 132px;
   }
   .navbar-top {
-    padding-top: 41px;
-    padding-bottom: 41px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .navbar__search {
     margin-left: 47px;
@@ -537,10 +538,14 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
-    max-width: 576px;
-    width: 92%;
+    width: 91%;
+  }
+  .navbar-top {
+    max-height: 70px;
+    padding-top: 28px;
+    padding-bottom: 28px;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
@@ -574,6 +579,12 @@ template {
   .stars {
     -ms-flex-preferred-size: content !important;
         flex-basis: content !important;
+    margin: 0;
+    padding: 0;
+  }
+  .hotel {
+    padding: 0 !important;
+    margin: 0;
   }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
@@ -583,6 +594,9 @@ template {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .hotel-info {
+    padding-bottom: 38px !important;
   }
   .hotel-info__text {
     width: 100%;
@@ -600,15 +614,23 @@ template {
         -ms-flex-order: -1;
             order: -1;
   }
+  .stars {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 600px) {
+  .hotel {
+    padding: 0;
+  }
 }
 
 @media (max-width: 576px) {
+  .container {
+    max-width: 87%;
+  }
   .logo {
     width: 99px;
-  }
-  .navbar-top {
-    padding-top: 28px;
-    padding-bottom: 28px;
   }
 }
 
@@ -663,11 +685,15 @@ template {
 .hotel-description {
   font-size: 12px;
   line-height: 15px;
+  margin: 0;
 }
 
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  padding-top: 24px;
+  padding-bottom: 1px;
+  margin: 0;
 }
 
 .offer {
@@ -696,6 +722,11 @@ template {
 .rating__counter {
   font-size: 14px;
   line-height: 18px;
+  font-weight: 700;
+}
+
+.rating__counter-item {
+  font-size: 10px;
 }
 
 .swiper-container {
@@ -703,6 +734,8 @@ template {
   height: 450px;
   position: relative;
   border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .swiper-container::after {

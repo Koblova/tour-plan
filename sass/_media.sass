@@ -8,8 +8,8 @@
     width: 132px
   .navbar
     &-top
-      padding-top: 41px
-      padding-bottom: 41px
+      padding-top: 30px
+      padding-bottom: 30px
     &__search
       margin-left: 47px
     &-menu
@@ -21,11 +21,14 @@
   .search
       &__input
         width: 340px
-@media (max-width: 768px)
+@media (max-width: 767px)
   .container
-    max-width: 576px
-    width: 92%
+    width: 91%
   .navbar
+    &-top
+      max-height: 70px
+      padding-top: 28px
+      padding-bottom: 28px 
     &__search, &-menu, &__user
       display: none
   .menu
@@ -46,12 +49,17 @@
         background-color: $text-color
   .stars
     flex-basis: content !important
+    margin: 0
+    padding: 0
   .hotel
+    padding: 0 !important
+    margin: 0
     &-name
       flex-basis: 100%
     &-wrapper
       justify-content: space-between
     &-info
+      padding-bottom: 38px !important
       &__text
         width: 100%
       &__name
@@ -62,10 +70,15 @@
       &__offer
         margin-left: 0 !important
         order: -1
+  .stars
+    padding: 0 !important
+@media (max-width: 767px) and (min-width: 600px)
+  .hotel
+    padding: 0
+
 @media (max-width: 576px)
+  .container
+    max-width: 87%
   .logo
     width: 99px
-  .navbar
-    &-top
-      padding-top: 28px
-      padding-bottom: 28px 
+
