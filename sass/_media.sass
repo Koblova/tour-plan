@@ -21,6 +21,10 @@
   .search
       &__input
         width: 340px
+  .hotel
+    &-info
+      &__name
+        margin-top: 5px 
 @media (max-width: 767px)
   .container
     width: 91%
@@ -48,37 +52,32 @@
         height: 1px
         background-color: $text-color
   .stars
-    flex-basis: content !important
-    margin: 0
-    padding: 0
+    flex-basis: content
   .hotel
-    padding: 0 !important
+    padding: 0
     margin: 0
     &-name
       flex-basis: 100%
     &-wrapper
       justify-content: space-between
     &-info
-      padding-bottom: 38px !important
+      padding-bottom: 38px
       &__text
         width: 100%
       &__name
-        margin-top: 10px
         margin-bottom: 0
       &__rating
         display: none
       &__offer
-        margin-left: 0 !important
+        margin-left: 0
         order: -1
-  .stars
-    padding: 0 !important
-@media (max-width: 767px) and (min-width: 600px)
-  .hotel
-    padding: 0
-
 @media (max-width: 576px)
   .container
     max-width: 87%
   .logo
     width: 99px
+  .hotel
+    &-info
+      &__name
+        margin-top: 10px
 
