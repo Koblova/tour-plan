@@ -651,6 +651,7 @@ template {
 .slider {
   width: 728px;
   height: 450px;
+  margin-right: 30px;
 }
 
 .slider-button {
@@ -687,6 +688,7 @@ template {
   width: 350px;
   min-height: 210px;
   padding: 28px;
+  margin-bottom: 23px;
 }
 
 .booking__info {
@@ -874,9 +876,13 @@ template {
   }
   .booking {
     width: 340px;
+    margin-right: 20px;
+    margin-bottom: 0;
   }
   .slider {
     width: 100%;
+    margin-bottom: 30px;
+    margin-right: 0;
   }
   .map {
     width: 340px;
@@ -987,8 +993,20 @@ template {
   .hotel__slider {
     margin-bottom: 20px;
   }
+  .hotel-right {
+    min-height: 400px;
+    margin-bottom: 40px;
+  }
   .slider {
     height: 250px;
+  }
+  .booking {
+    margin-right: 0;
+    margin-bottom: 20px;
+    height: 210px;
+  }
+  .map {
+    height: 173px;
   }
 }
 /*# sourceMappingURL=style.css.map */
