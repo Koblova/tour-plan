@@ -10,7 +10,8 @@
   .slider
     width: 590px
 @media (max-width: 992px)
-  .container
+  .container, 
+  .newsletter-wrapper
     max-width: 700px
   .logo
     width: 132px
@@ -105,6 +106,11 @@
     width: 100%
   .slider
     height: 350px
+  .newsletter
+    &-wrapper
+      flex-direction: column
+      width: 91%
+      align-items: flex-start
 @media (max-width: 576px)
   .container
     max-width: 87%
@@ -127,3 +133,9 @@
     height: 210px
   .map
     height: 173px
+  .subscribe
+    width: 100%
+  .newsletter
+    padding: 76px 0 83px 0
+    &__title
+      margin-bottom: 37px
