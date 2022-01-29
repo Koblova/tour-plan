@@ -1,9 +1,13 @@
 .newsletter
   position: relative
   padding: 98px 0 87px 0
-  min-height: 400px
-	background: transparent
-  &:before
+  /*min-height: 400px*/
+  background: transparent
+  background-size: cover
+  background-repeat: no-repeat
+  background-image: url(../img/newsletter-bg.jfif)
+  background-position: center
+  &::before
     content: ''
     position: absolute
     top: 0
@@ -26,6 +30,7 @@
     font-weight: 300
     font-size: 24px
     line-height: 30px
+    margin: 0
     &__strong
       display: block
       font-size: 36px
@@ -48,6 +53,8 @@
     font-weight: 300
     font-size: 14px
     line-height: 18px
+    &::placeholder
+      color: #BDBDBD
   &__button
     position: absolute
     min-width: 65px
@@ -57,13 +64,7 @@
     border: none
     background-color: $primary
     color: $light
-
-
-
-
-
-
-
-  
-
-
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
