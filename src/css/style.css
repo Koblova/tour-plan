@@ -977,16 +977,16 @@ img {
   line-height: 20px;
 }
 .card__title:nth-child(1) {
-  width: 145px;
+  max-width: 145px;
 }
 .card__title:nth-child(2) {
-  width: 153px;
+  max-width: 153px;
 }
 .card__title:nth-child(3) {
-  width: 161px;
+  max-width: 161px;
 }
 .card__title:nth-child(4) {
-  width: 200px;
+  max-width: 200px;
 }
 .card__button {
   font-style: normal;
@@ -1053,6 +1053,12 @@ img {
   margin: 0;
   list-style: none;
 }
+.footer__ul-disclaimer {
+  grid-column: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .footer__title {
   font-style: normal;
   font-weight: bold;
@@ -1089,6 +1095,20 @@ img {
 .footer__link {
   text-decoration: none;
   color: inherit;
+}
+.footer__link-disclaimer {
+  grid-column: span 2;
+  font-size: 12px;
+  line-height: 15px;
+}
+.footer__disclaimer {
+  grid-column: span 5;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.6fr 1fr 0.76fr;
+  padding-top: 102px;
+}
+.footer__disclaimer-links {
+  grid-column: 5;
 }
 .footer__input {
   background-color: #fff;
@@ -1202,6 +1222,9 @@ img {
     width: 340px;
   }
 
+  .hotel {
+    padding-bottom: 60px;
+  }
   .hotel-info__name {
     margin-top: 5px;
   }
@@ -1240,6 +1263,7 @@ img {
 
   .reviews__title {
     font-size: 30px;
+    margin-bottom: 50px;
   }
   .reviews-slider__button--prev {
     left: 50%;
@@ -1416,8 +1440,8 @@ img {
   }
 
   .hotel {
-    padding: 0;
     margin: 0;
+    padding-bottom: 40px;
   }
   .hotel-name {
     flex-basis: 100%;
@@ -1444,6 +1468,7 @@ img {
   .hotel-right {
     flex-direction: column;
     min-height: 450px;
+    margin: 0;
   }
   .hotel__slider {
     margin-bottom: 20px;
@@ -1457,7 +1482,6 @@ img {
 
   .map {
     width: 100%;
-    margin-bottom: 40px;
   }
 
   .newsletter {
@@ -1548,7 +1572,7 @@ img {
     width: 100%;
   }
   .card__title {
-    margin-bottom: 36px;
+    margin-bottom: 18px;
   }
 
   .activities {
@@ -1641,6 +1665,7 @@ img {
 
   .logo {
     width: 99px;
+    display: none;
   }
 
   .navbar__search {
@@ -1650,6 +1675,9 @@ img {
     margin-left: 0;
   }
 
+  .hotel {
+    padding-bottom: 40px;
+  }
   .hotel-info__name {
     margin-top: 10px;
   }
@@ -1660,7 +1688,6 @@ img {
   }
   .hotel-right {
     min-height: 400px;
-    margin-bottom: 40px;
   }
 
   .slider {
@@ -1671,10 +1698,6 @@ img {
     margin-right: 0;
     margin-bottom: 20px;
     height: 210px;
-  }
-
-  .map {
-    height: 173px;
   }
 
   .subscribe {
