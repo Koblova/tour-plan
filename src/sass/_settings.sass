@@ -9,4 +9,38 @@ body
   margin: auto
 img
   max-width: 100%
+.input 
+  background-color: #fff
+  border-radius: 4px
+  border: none
+  padding: 0 23px
+  height: 50px
+  flex-basis: 48%
+  font-size: 12px
+  
+label.invalid
+  color: $light
+  position: absolute
+  left: 0px
+  top: 55px
+  font-size: 10px
+  background-color: $primary
+  padding: 3px
+  border-radius: 5px
+  z-index: 1
+  text-decoration: none
+label[for="name"]
+  top: 40px
+label[for="phone"]
+  top: 40px
+input, textarea
+  &:focus
+    outline: none
+input
+  height: 50px
+  width: 100%
+  padding: 0 23px
+  border-radius: 4px
 
+
+   

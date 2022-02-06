@@ -6,22 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan — Hotel Booking</title>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&family=Nunito:wght@400;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
   <header class="navbar navbar--mobile_fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo">
+        <a href="/homeworks/best-tour-plan/" class="logo">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
         <form action="#" class="search navbar__search navbar__search--mobile_hidden">
           <input type="text" class="search__input" placeholder="Search Location">
-          <button class="search__button"> <img src="img/search.svg" alt="Icon: search" /></button>
+          <button class="search__button" data-toggle="modal"> <img src="img/search.svg" alt="Icon: search" /></button>
 
         </form>
         <a href="#" class="user navbar__user navbar__user--mobile_hidden">
@@ -54,7 +56,7 @@
           <li class="navbar-menu__item navbar-menu__item--mobile_visible">
             <form action="#" class="search navbar__search navbar__search--mobile_visible">
               <input type="text" class="search__input" placeholder="Search Location">
-              <button class="search__button"> <img src="img/search.svg" alt="Icon: search" /></button>
+              <button class="search__button"> <img src="img/search.svg" alt="Icon: search" data-toggle="modal"/></button>
 
             </form><a href="#" class="navbar-menu__link"></a>
           </li>
@@ -94,16 +96,18 @@
         <div class="hotel-info__text">
           <div class="hotel-wrapper">
             <div class="stars">
-              <img src="img/star.svg" alt="stars" class="stars stars__image" />
-              <img src="img/star.svg" alt="stars" class="stars stars__image" />
-              <img src="img/star.svg" alt="stars" class="stars stars__image" />
-              <img src="img/star.svg" alt="stars" class="stars stars__image" />
-              <img src="img/star.svg" alt="stars" class="stars stars__image" />
+              <img src="img/star.svg" alt="stars" class="stars__image" />
+              <img src="img/star.svg" alt="stars" class="stars__image" />
+              <img src="img/star.svg" alt="stars" class="stars__image" />
+              <img src="img/star.svg" alt="stars" class="stars__image" />
+              <img src="img/star.svg" alt="stars" class="stars__image" />
             </div>
             <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
             <span class="offer hotel-info__offer">Flash Offer</span>
           </div>
-          <p class="hotel-description hotel-info__description">Half-Board/ All Inclusive + Complimentary Activities +
+          <p class="hotel-description hotel-info__description">Half-Board<span class="whitespace">&nbsp;</span>/ All
+            Inclusive +
+            Complimentary Activities +
             Child
             Stays Free</p>
         </div>
@@ -168,14 +172,14 @@
                 <img src="img/phone-call.svg" alt="Icon: phone-call">
                 <span class="booking__num">12100</span></a>
             </div>
-            <button class="button booking__button">View Other Options</button>
+            <button class="button booking__button" data-toggle="modal">View Other Options</button>
 
           </div>
           <!-- /.booking -->
           <div class="map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.2235015846572!2d55.96649611461797!3d25.79619958362109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef676cd10d75637%3A0x87d9622fc273e134!2sDoubleTree%20by%20Hilton%20Ras%20Al%20Khaimah!5e0!3m2!1sru!2sru!4v1642710491183!5m2!1sru!2sru"
-              width="100%" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              class="map-card" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
         <!--.map-->
@@ -191,8 +195,8 @@
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
 
-      <form action="#" class="subscribe newsletter__subscribe">
-        <input type="text" class="subscribe__input" placeholder="Your email address">
+      <form action="send.php" class="subscribe newsletter__subscribe">
+        <input type="text" class="subscribe__input" placeholder="Your email address" name="mail" required>
         <button class="subscribe__button">Send</button>
       </form>
 
@@ -213,11 +217,11 @@
                 <h3 class="reviews-slider__username">Megan Fox</h3>
                 <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                 <div class="reviews-slider__rating">
-                  <img src="img/star.svg" alt="star" class="reviews-slider__rating reviews-slider__rating--star" />
-                  <img src="img/star.svg" alt="star" class="reviews-slider__rating reviews-slider__rating--star" />
-                  <img src="img/star.svg" alt="star" class="reviews-slider__rating reviews-slider__rating--star" />
-                  <img src="img/star.svg" alt="star" class="reviews-slider__rating reviews-slider__rating--star" />
-                  <img src="img/star.svg" alt="star" class="reviews-slider__rating reviews-slider__rating--star" />
+                  <img src="img/star.svg" alt="star" class=" reviews-slider__rating--star" />
+                  <img src="img/star.svg" alt="star" class=" reviews-slider__rating--star" />
+                  <img src="img/star.svg" alt="star" class=" reviews-slider__rating--star" />
+                  <img src="img/star.svg" alt="star" class=" reviews-slider__rating--star" />
+                  <img src="img/star.svg" alt="star" class=" reviews-slider__rating--star" />
                 </div>
                 <!-- /.reviews-slider__rating -->
               </div>
@@ -285,20 +289,20 @@
         <div class="card activities__card">
           <img src="img/activities-1.jpg" alt="The curious corner 
 of chamarel" class="card__image">
-          <h3 class="card__title">The curious corner
+          <h3 class="card__title card__title--space-1">The curious corner
             of chamarel</h3>
           <!-- /.card__title -->
-          <button class="card__button">Book Now</button>
+          <button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
 
         </div>
         <!-- /.card -->
         <div class="card activities__card">
           <img src="img/activities-2.jpg" alt="Gymkhana club golf
 course" class="card__image">
-          <h3 class="card__title">Gymkhana&nbsp;club&nbsp;golf
+          <h3 class="card__title card__title--space-2">Gymkhana club golf
             course</h3>
           <!-- /.card__title -->
-          <button class="card__button">Book Now</button>
+          <button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
 
         </div>
         <!-- /.card -->
@@ -306,21 +310,21 @@ course" class="card__image">
           <img src="img/activities-3.jpg" alt="Tamarind falls hiking
 trip - full day
 " class="card__image">
-          <h3 class="card__title">Tamarind&nbsp;falls&nbsp;hiking
-&nbsp;trip - full day
+          <h3 class="card__title card__title--space-3">Tamarind falls hiking
+ trip - full day
           </h3>
           <!-- /.card__title -->
-          <button class="card__button">Book Now</button>
+          <button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
 
         </div>
         <!-- /.card -->
         <div class="card activities__card">
           <img src="img/activities-4.jpg" alt="The blue marine discovery
 quest" class="card__image">
-          <h3 class="card__title">The&nbsp;blue&nbsp;marine&nbsp;discovery
+          <h3 class="card__title card__title--space-4">The blue marine discovery
             quest</h3>
           <!-- /.card__title -->
-          <button class="card__button">Book Now</button>
+          <button class="card__button" data-toggle="modal">Book Now</button>
 
         </div>
         <!-- /.card -->
@@ -331,9 +335,12 @@ quest" class="card__image">
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo" />
+        <a class="logo footer__logo-wrapper" href="/homeworks/best-tour-plan/"> <img src="img/vertical-logo.svg"
+            alt="Logo: Best Tour Plan"
+            class="logo footer__logo" />
+              </a>
         <div class="footer__list footer__categories">
-          <h3 class="footer__title">ALL CATEGORIES</h3>
+          <h3 class="footer__title footer__title--space-1">ALL CATEGORIES</h3>
           <ul class="footer__ul">
             <li class="footer__item"><a href="#" class="footer__link">All Deals</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Hotels</a></li>
@@ -346,18 +353,18 @@ quest" class="card__image">
           </ul>
         </div>
         <div class="footer__list footer__additional">
-          <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
+          <h3 class="footer__title footer__title--space-2">ADDITIONAL INFORMATION</h3>
           <ul class="footer__ul">
             <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
             <li class="footer__item"><a href="#" class="footer__link">How does it work?</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Frequently Asked Questions</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Deals.mu loyalty program</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">RPromote your Business on BTP</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Promote your Business on BTP</a></li>
           </ul>
         </div>
         <div class="footer__social-network">
-          <h3 class="footer__title footer__title--inline">Social Network</h3>
+          <h3 class="footer__title footer__title--space-3">Social Network</h3>
           <div class="footer__social-links">
             <a href="#" class="footer__link"><img src="img/fb.svg" alt="Icon: Fasebook"></a><a href="#"
               class="footer__link"><img src="img/yt.svg" alt="Icon: Youtube"></a><a href="#" class="footer__link"><img
@@ -367,7 +374,7 @@ quest" class="card__image">
         </div>
         <!-- /.footer__social-network -->
         <div class="footer__list footer__legal">
-          <h3 class="footer__title">LEGAL&nbsp;INFORMATION</h3>
+          <h3 class="footer__title footer__title--space-4">LEGAL INFORMATION</h3>
           <ul class="footer__ul">
             <li class="footer__item"><a href="#" class="footer__link">Terms & Conditions</a></li>
             <li class="footer__item"><a href="#" class="footer__link">Disclaimer</a></li>
@@ -376,56 +383,90 @@ quest" class="card__image">
           </ul>
         </div>
         <div class="footer__contact-details">
-          <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
+          <h3 class="footer__title footer__title--space-5">Contact Details</h3>
           <p class="footer__text">
             Feel free to contact us by phone, email or by our contact form</p>
           <ul class="footer__ul">
-            <li class="footer__item footer__item--mb-2">
-              <div class="footer__icon-wrapper"> <img class="footer__icon" src="img/map.svg" alt="Icon: Map" /></div>
-              Blossom Hill Rd
+            <li class="footer__item footer__item--mb-1">
+              <div class="footer__icon-wrapper"> <img class="footer__icon footer__icon--ml-1" src="img/map.svg" alt="Icon: Map" /></div>
+              9748 Blossom Hill Rd
               undefined Lansing,
               Idaho 68545 United States
             </li>
             <li class="footer__item footer__item--mb-2">
-              <div class="footer__icon-wrapper">
-                <img class="footer__icon" src="img/phone.svg" alt="Icon: Phone" />
+              <div class="footer__icon-wrapper footer__icon-wrapper--w-1">
+                <img class="footer__icon footer__icon--ml-2" src="img/phone.svg" alt="Icon: Phone" />
               </div>
-              Tel (business hours) : 269 1500<br>
-              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>
-              Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)<br>
+              <div class="footer__tel">
+                <span class="footer__tel-text">Tel (business hours) : <a href="tel:2691500"
+                    class="footer__link link-interactive">269 1500</a></span>
+                <span class="footer__tel-text">Tel (hotline) Monday - Saturday: <a href="tel:52566138"
+                    class="footer__link footer__link--mr-1 link-interactive">52-56-61-38</a> (08:00 am – 20:00
+                  pm)</span>
+                <span class="footer__tel-text">Tel (hotline) Sunday: <a href="tel:52566138"
+                    class="footer__link link-interactive">52-56-61-38</a> (08:00 am – 14:00 pm)</span>
+              </div>
             </li>
-            <li class="footer__item footer__item--mb-2">
-              <div class="footer__icon-wrapper"> <img class="footer__icon" src="img/mail.svg" alt="Icon: Email" /></div>
-              cherly.lawson@example.com
+            <li class="footer__item footer__item--mb-3">
+              <div class="footer__icon-wrapper"> <img class="footer__icon footer__icon--ml-3" src="img/mail.svg" alt="Icon: Email" /></div>
+              <a href="mailto:cherly.lawson@example.com"
+                class="footer__link footer__link--mt-1 link-interactive">cherly.lawson@example.com</a>
             </li>
           </ul>
         </div>
         <div class="footer__contact-form">
-          <h3 class="footer__title">Send us a message</h3>
-          <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" />
-            <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone" />
+          <h3 class="footer__title footer__title--space-6">Send us a message</h3>
+          <form action="send.php" method="POST" class="form footer__form">
+<div class="footer__input-wrapper"> <input type="text" placeholder="Your Full Name*" name="name"
+    required /></div>
+<div class="footer__input-wrapper"> <input type="text" placeholder="Phone Number*" name="phone"
+    required /></div>
             <textarea class="footer__message" placeholder="Message" name="message"></textarea>
-            <div class="ped">
+            <div class="bottom-form">
             <button class="button footer__button" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span></div>
           </form>
         </div>
         <div class="footer__disclaimer">
           <ul class="footer__ul footer__ul-disclaimer">
-            <li class="footer__item footer__link-disclaimer"><a href="#" class="footer__link footer__link-disclaimer">Disclaimer
-                policy</a></li>
+<div class="input-wrapper">            <li class="footer__item footer__link-disclaimer"><a href="#" class="footer__link footer__link-disclaimer">Disclaimer</a></li></div>
             <li class="footer__item footer__link-disclaimer"><a href="#" class="footer__link footer__link-disclaimer">Conditions of use </a></li>
             <li class="footer__item footer__link-disclaimer"><a href="#" class="footer__link footer__link-disclaimer">Cancellation policy</a></li>
           </ul>
           <div class="footer__disclaimer-links">
-            <a href="#" class="footer__link footer__link-disclaimer">
+            <a href="#" class="footer__link footer__link-img">
               <img src="img/disclaimer.png" alt="Icon: Disclaimer"></a>
           </div>
         </div>
       </div>
     </div>
   </footer>
+  <div class="modal hidden__modal" id="booking-modal">
+    <div class="modal__background"> </div>
+    <div class="modal__content">
+      <a href="#" class="modal__close"><img src="img/close.svg"></a>
+      <h2 class="modal__title">Booking</h2>
+      <form action="send.php" method="POST" class="form modal__form">
+        <div class="input-wrapper">
+          <input type="text" class="input modal__input" required placeholder="Your Full Name*" name="nameModal" />
+        </div>
+        <div class="input-wrapper">
+          <input type="text" class="input modal__input phone" required placeholder="Phone Number*" name="phoneModal" />
+        </div>
+        <div class="input-wrapper"><input type="text" class="input modal__input" required placeholder="Email*"
+            name="emailModal" /></div>
+        <textarea class="input__massage modal__massage" placeholder="Message" name="message"></textarea>
+        <div class="modal-block">
+          <button class="button footer__button" type="submit" data-toggle="modal">Send</button>
+          <span class="modal__info">* Required Fields</span></div>
+      </form>
+    </div>
+  </div>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
