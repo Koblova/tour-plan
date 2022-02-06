@@ -51,17 +51,19 @@ $(document).ready(function () {
     document.querySelector("body").classList.add("modal__open");
   });*/
 
-// modal
-  var modalButton = $("[data-toggle=modal]");
-  var closeModalButton = $(".modal__close");
+  // modal
+   var modalButton = $("[data-toggle=modal]");
   modalButton.on("click", openModal);
+
+  var closeModalButton = $(".modal__close");
   closeModalButton.on("click", closeModal);
-  
+
   function openModal() {
-    var targetModal = $(this).attr("data-href");
-    $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
-    $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
-  };
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    modalOverlay.addClass("modal__overlay--visible");
+    modalDialog.addClass("modal__dialog--visible");
+  }
 
   function closeModal(event) {
     event.preventDefault();
@@ -69,7 +71,7 @@ $(document).ready(function () {
     var modalDialog = $(".modal__dialog");
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
-  };
+  }
 
   $(document).keydown(function (event) {
     if (event.keyCode == 27) {

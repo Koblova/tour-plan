@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/aos.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
@@ -27,7 +28,7 @@
 
         </form>
         <a href="#" class="user navbar__user navbar__user--mobile_hidden">
-          <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
+          <img src="img/user-avatar.webp" alt="Avatar: Nathan" class="user__avatar" />
           <span class="user__name">Nathan</span>
 
         </a>
@@ -48,7 +49,7 @@
         <ul class="navbar-menu">
           <li class="navbar-menu__item navbar-menu__item--mobile_visible"> 
             <a href="#" class="user navbar__user navbar__user--mobile_visible">
-              <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar" />
+              <img src="img/user-avatar.webp" alt="Avatar: Nathan" class="user__avatar" />
               <span class="user__name user__name--light">Nathan</span>
 
             </a>
@@ -129,17 +130,17 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide.jpg"
+            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide.webp"
                 alt="slide"></div>
-            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-1.jpg"
+            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-1.webp"
                 alt="slide"></div>
-            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-2.jpg"
+            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-2.webp"
                 alt="slide"></div>
-            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-3.jpg"
+            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-3.webp"
                 alt="slide"></div>
-            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-4.jpg"
+            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-4.webp"
                 alt="slide"></div>
-            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-5.jpg"
+            <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/slide-5.webp"
                 alt="slide"></div>
           </div>
           <!-- swiper-wrapper -->
@@ -148,7 +149,7 @@
         </div>
         <!--swiper-container-->
         <div class="hotel-right">
-          <div class="booking">
+          <div class="booking" data-aos="fade-left" data-aos-delay="300">
             <div class="booking__info">
               <div class="booking__price">
                 <span class="booking__start">price starts as</span>
@@ -195,8 +196,8 @@
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
 
-      <form action="send.php" class="subscribe newsletter__subscribe">
-        <input type="text" class="subscribe__input" placeholder="Your email address" name="mail" required>
+      <form action="send.php" class="form subscribe newsletter__subscribe">
+        <input type="text" name="email" class="subscribe__input" placeholder="Your email address" required>
         <button class="subscribe__button">Send</button>
       </form>
 
@@ -213,7 +214,7 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img src="img/reviews-avatar.jfif" alt="Image: Megan Fox" class="reviews-slider__avatar">
+                <img src="img/reviews-avatar.webp" alt="Image: Megan Fox" class="reviews-slider__avatar">
                 <h3 class="reviews-slider__username">Megan Fox</h3>
                 <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                 <div class="reviews-slider__rating">
@@ -246,7 +247,7 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img src="img/reviews-avatar-2.jfif" alt="Image: Angela Johns" class="reviews-slider__avatar">
+                <img src="img/reviews-avatar-2.webp" alt="Image: Angela Johns" class="reviews-slider__avatar">
                 <h3 class="reviews-slider__username">Angela Johns</h3>
                 <span class="reviews-slider__date">Stayed 20 Dec, 2020</span>
                 <div class="reviews-slider__rating">
@@ -286,8 +287,8 @@
     <div class="container">
       <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
-        <div class="card activities__card">
-          <img src="img/activities-1.jpg" alt="The curious corner 
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
+          <img src="img/activities-1.webp" alt="The curious corner 
 of chamarel" class="card__image">
           <h3 class="card__title card__title--space-1">The curious corner
             of chamarel</h3>
@@ -296,8 +297,8 @@ of chamarel" class="card__image">
 
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
-          <img src="img/activities-2.jpg" alt="Gymkhana club golf
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="400">
+          <img src="img/activities-2.webp" alt="Gymkhana club golf
 course" class="card__image">
           <h3 class="card__title card__title--space-2">Gymkhana club golf
             course</h3>
@@ -306,8 +307,8 @@ course" class="card__image">
 
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
-          <img src="img/activities-3.jpg" alt="Tamarind falls hiking
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="500">
+          <img src="img/activities-3.webp" alt="Tamarind falls hiking
 trip - full day
 " class="card__image">
           <h3 class="card__title card__title--space-3">Tamarind falls hiking
@@ -318,8 +319,8 @@ trip - full day
 
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
-          <img src="img/activities-4.jpg" alt="The blue marine discovery
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="600">
+          <img src="img/activities-4.webp" alt="The blue marine discovery
 quest" class="card__image">
           <h3 class="card__title card__title--space-4">The blue marine discovery
             quest</h3>
@@ -388,7 +389,7 @@ quest" class="card__image">
             Feel free to contact us by phone, email or by our contact form</p>
           <ul class="footer__ul">
             <li class="footer__item footer__item--mb-1">
-              <div class="footer__icon-wrapper"> <img class="footer__icon footer__icon--ml-1" src="img/map.svg" alt="Icon: Map" /></div>
+              <img class="footer__icon footer__icon--ml-1" src="img/map.svg" alt="Icon: Map" />
               9748 Blossom Hill Rd
               undefined Lansing,
               Idaho 68545 United States
@@ -441,27 +442,38 @@ quest" class="card__image">
       </div>
     </div>
   </footer>
-  <div class="modal hidden__modal" id="booking-modal">
-    <div class="modal__background"> </div>
-    <div class="modal__content">
-      <a href="#" class="modal__close"><img src="img/close.svg"></a>
-      <h2 class="modal__title">Booking</h2>
-      <form action="send.php" method="POST" class="form modal__form">
-        <div class="input-wrapper">
-          <input type="text" class="input modal__input" required placeholder="Your Full Name*" name="nameModal" />
+  <div class="modal">
+    <div class="modal__overlay"></div>
+
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/close.svg" alt="Icon: Close" loading="lazy">
+      </a>
+      <h3 class="modal__title">Booking</h3>
+      <form action="send.php" method="POST" class="modal__form form">
+        <div class="modal-wrapper">
+          <input type="text" name="nameModal" class="input modal__input" placeholder="Your Full Name*" required>
         </div>
-        <div class="input-wrapper">
-          <input type="text" class="input modal__input phone" required placeholder="Phone Number*" name="phoneModal" />
+        <div class="modal-wrapper">
+          <input type="tel" name="phoneModal" class="input modal__input phone" placeholder="Phone Number*" required>
         </div>
-        <div class="input-wrapper"><input type="text" class="input modal__input" required placeholder="Email*"
-            name="emailModal" /></div>
-        <textarea class="input__massage modal__massage" placeholder="Message" name="message"></textarea>
-        <div class="modal-block">
-          <button class="button footer__button" type="submit" data-toggle="modal">Send</button>
-          <span class="modal__info">* Required Fields</span></div>
-      </form>
-    </div>
-  </div>
+        <div class="modal-wrapper">
+          <input type="email" name="emailModal" class="input modal__input" placeholder="Email*" required>
+        </div>
+
+        <textarea name="message" class="message modal__message" placeholder="Message"></textarea>
+        <div class="modal__button-block">
+          <button class="button modal__button btn-interactive" type="submit" name="modalBtn">
+            Send
+          </button>
+          <span class="modal__info">* Required Fields</span>
+        </div>
+        </form>
+        </div>
+        </div>
+
+
+  <script src="js/aos.js"></script>
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>

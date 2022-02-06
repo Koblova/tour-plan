@@ -14,21 +14,31 @@
     height: 230px
   .footer
     &-wrapper
-      grid-template-columns: 279px 188px 244px 188px
+      grid-template-columns: 189px 188px 290px 232px
     &__title
       &--mb-2
         margin-bottom: 34px
     &__input
       flex-basis: 47%
+    &__contact
+      &-form
+        grid-column: span 3
+        grid-row: 5
+        padding-right: 100px
+      &-details
+        grid-column: span 3
     &__disclaimer
-      grid-template-columns: 1fr 0.9fr 2.3fr 1fr 0.9fr
+      grid-template-columns: 15% 15% 35% 20% 15%
       grid-column: span 4
-      grid-row: 5
+      grid-row: 6
       width: 100%
       padding-top: 82px
       &-links
         text-align: right
         grid-gap: 5px
+    &__icon
+      &--ml-1
+        margin-right: 22px
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -153,7 +163,8 @@
       grid-template-columns: 14% 9% 27% 10% 5.5% 20%
       grid-column-gap: 20px
     &__input
-      flex-basis: 47.2%
+      &-wrapper
+        flex-basis: 47.2%
     &__logo
       grid-row: 1 / 2
       grid-column: span 2
@@ -417,7 +428,8 @@
       &--space-6
         margin-top: 19px
     &__input
-      flex-basis: 100%
+      &-wrapper
+        flex-basis: 100%
     &-wrapper
       grid-template-columns: 50% 50%
       grid-row: 2
@@ -475,6 +487,10 @@
     display: flex
     flex-direction: column-reverse
     align-items: start
+  .modal
+    &__dialog
+      padding: 33px 5%
+
 
 @media (max-width: 576px)
   .container
@@ -654,6 +670,7 @@
       &--ml-1
         margin: 0
         margin-top: 3px
+        margin-right: 13px
       &--ml-2
         margin: 0
         margin-top: -2px
@@ -673,7 +690,7 @@
       &--mr-1  
         width: 86px
         display: inline-block
-    &__input, &__message
+    &__input-wrapper, &__message
       width: 100%
     &__disclaimer
       grid-template-columns: 100%
@@ -685,10 +702,83 @@
         grid-column: 1
         justify-content: flex-start
         margin-top: 0
-
-
   .logo
     width: 96px
+  .modal
+    &__dialog 
+      padding: 15px 5%
+      width: 80%
+    &__form 
+      display: flex
+      max-width: 100%
+      min-width: 100%
+      flex-direction: column
+      align-items: center
+    &__input 
+      flex-basis: 60%
+      width: 100%
+      margin-top: 15px
+    &__message 
+      min-height: 100px
+      min-width: 186px
+      margin-top: 15px
+      margin-bottom: 13px
+      width: auto
+    &__button
+      width: 186px
+      &-block
+        flex-direction: column
+        justify-content: space-between
+    &__info
+      margin-top: 15px
+  label.invalid
+    font-size: 14px
+
+@media (max-height: 520px)
+  .modal
+    &__dialog
+      padding: 15px 5%
+      min-height: auto
+      overflow: scroll
+      width: auto
+    &__form 
+      display: flex
+      max-width: 200px
+      min-width: 182px
+      flex-direction: column
+      align-items: center
+    &__title
+      margin-bottom: 5px
+    &__input
+      margin-top: 5px
+      flex-basis: 60%
+      width: 100%
+    &__message
+      margin-top: 7px
+      min-height: auto
+      margin-bottom: 7px
+      width: 186px
+    &__button
+      width: 186px
+    &-block
+      flex-direction: column
+      justify-content: space-between
+    &__info
+      margin-top: 10px
+  label.invalid
+    top: 45px
+    font-size: 11px
+
+@media (max-height: 370px)
+  .modal
+    &__input
+      height: 40px
+  label.invalid
+    top: 40px
+    font-size: 10px
+
+
+
   
   
 
